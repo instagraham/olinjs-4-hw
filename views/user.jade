@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 Enter your username
+	form(action='/users/create', method = 'POST')
+		|Username:
+		input(type = 'textbox', name = 'username')
+		|<br> Password: 
+		input(type = 'textbox', name = 'password')
+		input(type = 'submit', value = 'submit')

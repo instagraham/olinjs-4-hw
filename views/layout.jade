@@ -1,0 +1,103 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src = 'http://code.jquery.com/jquery.js')
+    script(src='/javascripts/tweets.js')
+  body
+    block content
+
+    style
+      body
+      {
+      background-color:#0099FF;
+      }
+
+      .tweeter 
+      {font-size:20px;
+      font-weight:bold;
+      padding-left:15px;
+      text-wrap:unrestricted;
+      }
+
+      .tweet 
+      {font-size:14px;
+      padding-left:15px;
+      text-wrap:unrestricted;
+      }
+
+      h1
+      {font-size:40px;
+      text-align:center;
+      margin-top: -40px;
+      }
+
+      #composer 
+      {
+      font-size:22px;
+      font-weight:bold;
+      padding-left:10px;
+      padding-top: 20px;
+      padding-right:10px;
+      display:inline-block;
+      text-wrap:normal;
+      width: 80px;
+      vertical-align:center;
+      }
+
+      input[type=textbox]
+      {border: 1px solid #B0B8B8;
+      margin-right: 20px;
+      width :*;
+      margin-left: 20px;
+      display: inline-block; 
+      vertical-align:center;
+      resize:both; 
+      max-height:300px; 
+      min-height:25px;
+      max-width:400px; 
+      min-width:255px;
+      background-color:#DFE3E3;
+      }
+
+      input[type=submit]
+      {float:right;
+      margin-right: 20px;
+      border:2px solid black;
+      font-size: 16px;
+      margin-top:20px;
+      margin-bottom:20px;
+      }
+
+
+      #topnote 
+      {
+      font-size:30px;
+      font-weight:bold;
+      text-align:center;
+      padding-top: 20px;
+      border-bottom: 4px solid black;
+      }
+
+      .chunk
+      {
+      border:6px solid black;
+      border-radius: 14px;
+      background-color:#9BACAC;
+      display:inline-block;
+      vertical-align:text-top;
+      float:left;
+      margin:5px;
+      }
+
+      #createchunk
+      {
+      width:400px;
+      }
+
+      #twitschunk 
+      {
+      width:500px;  
+      margin-right:200px;
+      }
