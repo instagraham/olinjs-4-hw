@@ -5,9 +5,9 @@ var twits = require('./twits')
  */
 
 exports.index = function(req, res){
-	console.log(req.session.name)
+	console.log(req.session.user.name)
   twits.rendertwits(req, function(twits) {
       res.render('index', 
-    { title: 'Express', tweets:twits, user:req.session.name});
+    { title: 'Express', tweets:twits, user:req.session.user.name});
   })
 };
